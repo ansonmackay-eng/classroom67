@@ -1,0 +1,35 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><script>
+    // NEW FUNCTION: Opens the panic site in a brand new, designated window
+    function openPanicSite() {
+        // 1. Open the new window/site (Google Classroom) with specific dimensions
+        window.open('https://classroom.google.com', 'panicWindow', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=' + screen.availWidth + ',height=' + screen.availHeight);
+       
+        // 2. Disguise the original tab by replacing the URL with Wikipedia
+        window.location.replace('https://www.wikipedia.org/');
+    }
+
+    // (Your existing filterCards() function goes here, unchanged)
+    function filterCards() {
+        var input = document.getElementById('searchBar');
+        var filter = input.value.toUpperCase();
+        var cards = document.getElementsByClassName('card');
+
+        // Loop through all cards and hide those that don't match the search filter
+        for (var i = 0; i < cards.length; i++) {
+            var title = cards[i].getElementsByClassName('card-title')[0].textContent.toUpperCase();
+            var tag = cards[i].getElementsByClassName('tag')[0].textContent.toUpperCase();
+           
+            // Check if the filter text is in the title OR the tag
+            if (title.indexOf(filter) > -1 || tag.indexOf(filter) > -1) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+</script></pre>
+        </body>
+    </html>
