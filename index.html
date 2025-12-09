@@ -1,0 +1,125 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom 67 Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1e1e2e; color: #fff; margin: 0; padding: 20px; }
+        h1 { text-align: center; color: #a6e3a1; font-size: 3em; margin-bottom: 10px; }
+        h2 { border-bottom: 2px solid #45475a; padding-bottom: 10px; margin-top: 40px; color: #89b4fa; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+        .card { background-color: #313244; padding: 20px; border-radius: 12px; text-align: center; transition: transform 0.2s, background 0.2s; text-decoration: none; color: #cdd6f4; display: block; border: 1px solid #45475a; }
+        .card:hover { transform: translateY(-5px); background-color: #45475a; border-color: #a6e3a1; }
+        .card-title { font-weight: bold; font-size: 1.1em; display: block; margin-bottom: 5px; }
+        .tag { font-size: 0.8em; opacity: 0.7; }
+        /* Style for the new Search Bar */
+        #searchBar {
+            width: 80%;
+            max-width: 600px;
+            padding: 12px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 8px;
+            border: none;
+            background: #313244;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Style for the Panic Button */
+        #panicButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #f38ba8; /* Pink/Red for visibility */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #1e1e2e;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.2s;
+        }
+        #panicButton:hover {
+            background: #e65275;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Classroom 67</h1>
+    <p style="text-align:center; opacity: 0.8;">Curated Games & Tools Dashboard</p>
+
+    <input type="text" id="searchBar" onkeyup="filterCards()" placeholder="🔍 Search for games or categories..." title="Type to filter the cards">
+
+    <div id="card-container">
+        <h2>🎮 Top Games</h2>
+        <div class="grid">
+            <a href="https://turtletown71.github.io/" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Minecraft</span><span class="tag">Sandbox</span></a>
+            <a href="https://retro-bowl-76-77.github.io/" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Retro Bowl</span><span class="tag">Sports</span></a>
+            <a href="https://ghp1tallteam.github.io/" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Smash Karts</span><span class="tag">Action</span></a>
+            <a href="https://gladihoppers.io/" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Gladihoppers</span><span class="tag">Combat</span></a>
+            <a href="https://sites.google.com/view/poly-track/poly-track-0-5-1" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Poly Track</span><span class="tag">Racing</span></a>
+            <a href="https://infinitecraftnew.com/" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Infinite Craft</span><span class="tag">Logic</span></a>
+            <a href="https://gd.games/rinexusgames/stranded-on-a-raft" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Stranded on a Raft</span><span class="tag">Survival</span></a>
+        </div>
+
+        <h2>🛡️ Proxies & Unblockers</h2>
+        <div class="grid">
+            <a href="https://orbit.train.dbaseworld.com/" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Utopia Proxy</span><span class="tag">Web</span></a>
+            <a href="https://chstextbook.github.io/pages/nav/featured.html" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Holy Unblocker</span><span class="tag">Web</span></a>
+            <a href="https://artclass-static.vercel.app/search.html" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Art Class Proxy</span><span class="tag">Web</span></a>
+            <a href="https://www.conwordable.com/" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Shuttle Math</span><span class="tag">Disguised</span></a>
+            <a href="https://us4-ubg.github.io/" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Amazing Proxy</span><span class="tag">UBG</span></a>
+        </div>
+
+        <h2>📂 Game Collections</h2>
+        <div class="grid">
+            <a href="https://classrooms6x.gitlab.io/" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Classroom 6x</span><span class="tag">Hub</span></a>
+            <a href="https://unblockedrush.com/" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Unblocked Rush</span><span class="tag">Hub</span></a>
+            <a href="https://sites.google.com/view/drive-u-7-home-10/home" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Google Drive Games</span><span class="tag">Hub</span></a>
+        </div>
+
+        <h2>🔊 Extras</h2>
+        <div class="grid">
+            <a href="https://soundbuttons.com/" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">Sound Buttons</span><span class="tag">Fun</span></a>
+            <a href="https://www.myinstants.com/en/index/us/" class="card" target="_blank" rel="noopener noreferrer"><span class="card-title">MyInstants</span><span class="tag">Fun</span></a>
+        </div>
+    </div>
+   
+    <footer style="margin-top: 50px; text-align: center; opacity: 0.5;">
+        <p>Links generated from uploaded content. This hub uses client-side JavaScript for searching.</p>
+    </footer>
+
+    <button id="panicButton" onclick="window.location.replace('https://classroom.google.com')">
+        Panic Mode (Classroom)
+    </button>
+
+    <script>
+    function filterCards() {
+        var input = document.getElementById('searchBar');
+        var filter = input.value.toUpperCase();
+        var cards = document.getElementsByClassName('card');
+
+        // Loop through all cards and hide those that don't match the search filter
+        for (var i = 0; i < cards.length; i++) {
+            var title = cards[i].getElementsByClassName('card-title')[0].textContent.toUpperCase();
+            var tag = cards[i].getElementsByClassName('tag')[0].textContent.toUpperCase();
+           
+            // Check if the filter text is in the title OR the tag
+            if (title.indexOf(filter) > -1 || tag.indexOf(filter) > -1) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+</body>
+</html></pre>
+        </body>
+    </html>
